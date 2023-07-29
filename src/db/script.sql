@@ -37,10 +37,10 @@ CREATE TABLE trainer(
 CREATE TABLE datos_contacto(
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     email_personal VARCHAR(60) NOT NULL,
-    email_corp VARCHAR(60) NOT NULL,
-    telef_residencia VARCHAR(60) NOT NULL,
-    telef_empresa VARCHAR(60) NOT NULL,
-    telef_movil_empre VARCHAR(60) NOT NULL,
+    email_corp VARCHAR(60) NOT NULL DEFAULT "email@gmail.com",
+    telef_residencia VARCHAR(20) NOT NULL,
+    telef_empresa VARCHAR(20) NOT NULL DEFAULT "3232323223",
+    telef_movil_empre VARCHAR(20) NOT NULL,
     cedula_trainer BIGINT NOT NULL,
     Foreign Key (cedula_trainer) REFERENCES trainer(cedula)
 );
@@ -68,3 +68,13 @@ CREATE TABLE insidencia(
     Foreign Key (id_area) REFERENCES area(id),
     Foreign Key (cedula_trainer) REFERENCES trainer(cedula)
 );
+
+INSERT INTO tipo_area(nombre) VALUES ('training'), ('review1'), ('review2');
+
+INSERT INTO area(nombre, id_tipo_area) VALUES('apolo', 1), ('artemis', 1), ('sputnik', 1), ('skylab', 1), ('corvus', 2), ('endor', 3);
+
+INSERT INTO tipo_dispositivo(nombre) VALUES('computador'), ('teclados'), ('mouse'), ('diademas');
+
+INSERT INTO categoria(nombre) VALUES('hardware'), ('software');
+
+INSERT INTO tipo_insidencia(nombre) VALUES('leve'), ('moderada'), ('critica');
