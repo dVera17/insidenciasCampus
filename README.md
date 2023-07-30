@@ -8,7 +8,7 @@ Este aplicativo permite llevar la gestion de insidencias tecnicas en cada una de
 
 A continuacion se presenta el modelo relacional de la base de datos utilizado en el proyecto.
 
-[![modeloRelacionalBD](imgs/modeloRelacionalBD.png)](imgs/modeloRelacionalBD.png)
+[![modeloRelacionalBD](imgs/MRinsidencias.png)](imgs/MRinsidencias.png)
 
 ## Requisitos del sistema
 
