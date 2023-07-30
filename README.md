@@ -61,7 +61,7 @@ Este proyecto implementa un sistema de autenticación basado en JWT (JSON Web To
 
 ### Autenticación con JWT
 
-Para obtener el token de autorizacion debes enviar una solicitud GET al endpoint `/api/token/:nombre`, por ejemplo, `localhost:5010/token/ronaldo`, de esta forma el servidor generará un token firmado que contendrá esta información y se lo devolvera al cliente en la respuesta.
+Para obtener el token de autorizacion debes enviar una solicitud GET al endpoint `/api/token/:nombre`, por ejemplo, `localhost:5010/api/token/ronaldo`, de esta forma el servidor generará un token firmado que contendrá esta información y se lo devolvera al cliente en la respuesta.
 
 ### Manejo de Tokens Expirados
 
